@@ -11,7 +11,7 @@ MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
 # Update & install packages for installing RACADM
 RUN yum update -y && \
-    yum install -y wget perl openssl-devel epel-release
+    yum install -y wget perl openssl-devel epel-release openssh-clients
 
 #wget and run the repo install script from Dell 
 RUN wget -q -O - http://linux.dell.com/repo/hardware/latest/bootstrap.cgi | bash
